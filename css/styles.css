@@ -188,7 +188,6 @@ body {
   /* flex-direction: column; */
 
   background: var(--background-dark);
-  /* max-width: 1600px; */
   background-image: linear-gradient(var(--background-gradient-first), var(--background-gradient-first)), url(../images/backgroundimg.jpg);
 
   background-size: 1600px 100%;
@@ -196,8 +195,8 @@ body {
   background-repeat: no-repeat;
   /* background-attachment: local; */
 
-  /* padding-left: 0px;
-  padding-right: 0px; */
+  padding-top: 0px;
+  padding-bottom: 0px;
 }
 
 .main-title {
