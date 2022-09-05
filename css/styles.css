@@ -1,5 +1,5 @@
 body {
-  background: #e5e5e5;
+  background: #ffffff;
   font-family: "Roboto", "Raleway", "sans-serif";
   font-size: 14px;
   color: #212121;
@@ -111,37 +111,23 @@ body {
   color: var(--link-color);
 } */
 
-/* .envelope-icon,
-.smartphone-icon  */
 .icon {
-  /* display: inline-flex;
-  width: fit-content;
-  height: fit-content;
-  align-items: center;
-  justify-content: center; */
-  /* background-color: #ffffff; */
   fill: currentColor;
-  /* transition: 0.2s; */
-  /* margin-right: 10px; */
-  /* border: 1px #000000 dashed; */
 }
 .header-icon {
   margin-right: 10px;
-  background-color: #ffffff;
+  background-color: inherit;
+  fill: var(--text-dark);
   display: inline-flex;
   width: fit-content;
   height: fit-content;
+  justify-content: center;
   align-items: center;
 }
-/* .envelope-icon:hover,
-.envelope-icon:active,
-.envelope-icon:focus,
-.smartphone-icon:hover,
-.smartphone-icon:active,
-.smartphone-icon:focus  */
 
-.header-icon:hover,
-.header-icon:focus,
+/* .header-icon:hover,
+.header-icon:focus, */
+
 .icon:hover,
 .icon:focus {
   fill: var(--link-color);
@@ -157,8 +143,17 @@ body {
   line-height: 1.14em;
   text-align: center;
   vertical-align: middle;
-  color: var(--second-color);
+  color: var(--text-dark);
   text-decoration: none;
+}
+
+.header-contact-elmnt:hover .header-icon,
+.header-contact-elmnt:focus .header-icon {
+  color: var(--link-color);
+  fill: var(--link-color);
+  border-color: var(--icon-select-color);
+  transition: 0.2s;
+  cursor: pointer;
 }
 
 .header-contact-elmnt:not(:last-child) {
@@ -392,6 +387,7 @@ body {
   border: none;
   border-radius: 50%;
   background-color: var(--background-light);
+  fill: var(--icon-color);
   /* gap: 10px; */
 }
 
@@ -408,7 +404,7 @@ body {
   height: 92px;
   justify-content: center;
   align-content: center;
-  border: 1px solid #afb1b8;
+  border: 1px solid var(--icon-color);
   border-radius: 4px;
 }
 
@@ -425,7 +421,14 @@ body {
   justify-content: center;
   align-self: center;
   fill: var(--icon-color);
+  background-color: inherit;
 }
+
+.client-icon:hover .light-section-icon,
+.client-icon:focus .light-section-icon {
+  fill: var(--icon-select-color);
+}
+
 .footer {
   background: var(--background-dark);
   padding-top: 60px;
